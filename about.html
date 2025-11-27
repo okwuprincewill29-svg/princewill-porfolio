@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+     
+      <nav>
+         <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img class="close" 
+                  src="pictures/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+                <li><a href="home.htm" >Home</a></li>
+                <li><a href="about.html"  >About</a></li>
+                <li><a href="skill.html" >Skills</a></li> 
+                <li><a href="project.html"  >Projects</a></li> 
+                <li><a href="services.html"  >Service</a></li> 
+                <li><a href="contact.html"  >Contact</a></li> 
+            </ul>
+            <ul>
+              <li>My- <span class="highlight"> Portfolio</span></li>
+                <li class="hideOnMobile"><a href="home.htm" >Home</a></li>
+                <li class="hideOnMobile"><a href="about.html"  >About</a></li>
+                <li class="hideOnMobile"><a href="skill.html"  >Skills</a></li> 
+                <li class="hideOnMobile"><a href="project.html"  >Projects</a></li> 
+                <li class="hideOnMobile"><a href="services.html" >Service</a></li> 
+                <li class="hideOnMobile"><a href="contact.html"  >Contact</a></li> 
+                <li class="menu-button"
+                onclick=showSidebar()>
+                     <a href="#"><img class="menu" 
+                       src="pictures/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" ></a></li>
+              </ul>
+    </nav>  
+
+    <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+</script>
+    <div class="flexdiv" >
+     
+    <div class="section-1">
+    <section id="hero" class="container">
+        <div class="hero-content">
+            <div class="body-text"><h2>👋About Me</h2>
+            <p>I am a Web Developer specializing in clean, responsive design and robust functionality.
+                 With a strong foundation in HTMsL, CSS, and JavaScript.</p>
+                <p>I bring projects to life, ensuring high quality and effective delivery in every task.
+                I build beautiful, responsive, and functional websites.
+               As a dedicated Web Developer, I possess practical experience working with core technologies: 
+                HTML, CSS, and JavaScript.</p> 
+                <p>My focus is on transforming ideas into polished, functional products. I am actively seeking entry-level Frontend Developer roles where I can contribute to a dynamic team and
+               grow my skills in modern JavaScript frameworks.</p>
+               <p>Currently focusing on mastering JavaScript fundamentals and building my first full-stack project.</p> 
+               <p>I love collaborating on small, 
+               creative projects that push my understanding of CSS animations and user experience.
+            </p>
+            </div>
+        </div>
+        </div>
+        <button class="contact-me" >Contact Me <button class="download-resume" >Download Resume</button></button>
+    </section>
+    </div>
+<div class="section-2">
+       <p class="title" >Qualifications</p>
+    <p class="sub-title">Education</p>
+    <div class="div-qualification">
+    <p class="sub-title-1">Secondary School Certificate (S.S.C)</p>
+    <p class="sub-title-2">Divine Acumen Global College</p>
+    <p class="sub-title-3">2020</p>
+    </div>
+
+    <div class="div-qualification">
+    <p class="sub-title-1">Bachelor of Engineering in
+       Electrical and Electronics Engineering
+    </p>
+    <p class="sub-title-2">Federal University Oye-Ekiti Nigeria</p>
+    </div>
+    
+    
+    <p class="sub-title">Professional Courses</p>
+
+    <div
+    class="div-qualification">
+    <p class="sub-title-1">Programming Hero</p>
+    <p class="sub-title-2">Web Development</p>
+    </div>
+<div class="div-qualification">
+    <p class="sub-title-1">Dreamland IT Institute</p>
+    <p class="sub-title-2">Web Design</p>
+</div>
+</div>
+ 
+</body>
+</html>

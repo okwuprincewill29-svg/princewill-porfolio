@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+   
+      <nav>
+         <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img class="close" 
+                  src="pictures/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+                <li><a href="home.htm"  >Home</a></li>
+                <li><a href="about.html"  >About</a></li>
+                <li><a href="skill.html"  >Skills</a></li> 
+                <li><a href="project.html"  >Projects</a></li> 
+                <li><a href="services.html" >Service</a></li> 
+                <li><a href="contact.html" >Contact</a></li> 
+            </ul>
+            <ul>
+              <li>My- <span class="highlight"> Portfolio</span></li>
+                <li class="hideOnMobile"><a href="home.htm" >Home</a></li>
+                <li class="hideOnMobile"><a href="about.html"  >About</a></li>
+                <li class="hideOnMobile"><a href="skill.html"  >Skills</a></li> 
+                <li class="hideOnMobile"><a href="project.html"  >Projects</a></li> 
+                <li class="hideOnMobile"><a href="services.html" >Service</a></li> 
+                <li class="hideOnMobile"><a href="contact.html"  >Contact</a></li> 
+                <li class="menu-button"
+                onclick=showSidebar()>
+                     <a href="#"><img class="menu" 
+                       src="pictures/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" ></a></li>
+              </ul>
+    </nav>  
+
+    <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+</script>
+    <h3>Services</h3>
+<div class="card-container">
+<div class="card">
+    <p class="title">Web Design</p>
+    <p>Creative and modern designs with
+        user-friendly interfaces focused on
+        delivering smooth user experiences.
+    </p>
+</div>    
+
+<div class="card">
+    <p class="title">Web Development</p>
+    <p>Custom front-end development 
+        ensuring responsive, secure,
+        and high-performance website.
+    </p>
+</div>
+
+<div class="card">
+    <p class="title">WordPress</p>
+    <p>Building and customizing WordPress
+        websites themes and designs to match
+        your brand and goals.
+    </p>
+</div>
+</div>
+
+
+</body>
+</html>

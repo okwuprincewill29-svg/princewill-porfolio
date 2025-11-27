@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+      <nav>
+         <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img class="close" 
+                  src="pictures/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+                <li><a href="home.htm"  >Home</a></li>
+                <li><a href="about.html"  >About</a></li>
+                <li><a href="skill.html"  >Skills</a></li> 
+                <li><a href="project.html"  >Projects</a></li> 
+                <li><a href="services.html" >Service</a></li> 
+                <li><a href="contact.html" >Contact</a></li> 
+            </ul>
+            <ul>
+              <li>My- <span class="highlight"> Portfolio</span></li>
+                <li class="hideOnMobile"><a href="home.htm" >Home</a></li>
+                <li class="hideOnMobile"><a href="about.html"  >About</a></li>
+                <li class="hideOnMobile"><a href="skill.html"  >Skills</a></li> 
+                <li class="hideOnMobile"><a href="project.html" >Projects</a></li> 
+                <li class="hideOnMobile"><a href="services.html" >Service</a></li> 
+                <li class="hideOnMobile"><a href="contact.html"  >Contact</a></li> 
+                <li class="menu-button"
+                onclick=showSidebar()>
+                     <a href="#"><img class="menu" 
+                       src="pictures/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" ></a></li>
+              </ul>
+    </nav>  
+    <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+</script>
+        </header>
+        <img 
+       src="pictures/My pic.jpg">
+  <div class="header">
+  <nav class="navbar">
+    <div class="">   
+      
+     
+            
+  </nav>
+  </div>
+  <div class="experience-project">
+    <div class="experience" >
+       <h3>1+ yrs</h3> 
+      <h6>Experience</h6>    
+      </div> 
+         <div class="projects" > 
+          <h3>10</h3> 
+      <h6>Projests completed</h6>     
+</div>
+
+    
+
+            
+    <section id="contact">
+        <div class="container" style="text-align: center;">
+            <h2>I'm <span class="highlight" > Okwu Princewill</span></h2>
+            <p class="description" >I am a passionate Web Developer and Designer specializing in modern,
+              responsive, and user-friendly applications.
+              I focus on building impactful digital experience understanding
+              creativity and modern technologies.
+               </p>
+            <p>Have a project in mind? I'm currently open to new opportunities.</p>
+            <a href="mailto:okwuprincewill29@gmail.com" 
+            class="cta-button"><img class="gmail" 
+              src="pictures/gmail 2.png"></a>
+            <a href="http://wa.me/2347047381995">
+              <img class="whatsapp" src="pictures/whatsapp.png"></a>  
+            <a href=""><img class="twitter" src="pictures/twitter.png"></a> 
+            <a href="http://www.facebook.com/willprince29">
+              <img class="fb" src="pictures/fb.jpeg"></a>
+        </div>
+    </section>
+    </div>
+</body>
+</html>
